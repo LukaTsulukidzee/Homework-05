@@ -1,0 +1,215 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* ! Code Started */
+
+body {
+  background-color: var(--bodycolor);
+  font-family: "Noto Sans Georgian", sans-serif;
+}
+
+:root {
+  --bodycolor: #d9d9d9;
+  --desktopcolor: #f5f5f5;
+  --buttonBgcolor: #5468e780;
+  --buttonColor: #232340;
+  --ulColors: #232340;
+}
+
+.desktop-section {
+  max-width: 1440px;
+  height: 2786px;
+  background-color: var(--desktopcolor);
+  display: flex;
+}
+
+.head-section {
+  margin: 40px 140px 0px 140px;
+  width: 1160px;
+  height: 52px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-wrap {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.text-wrap ul {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  color: #232340;
+  text-decoration: underline;
+  font-style: solid;
+  line-height: 150%;
+}
+
+.button-access {
+  width: 184px;
+  height: 47px;
+  background-color: var(--buttonBgcolor);
+  color: var(--buttonColor);
+  border-radius: 4px;
+  border: none;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  font-weight: 400;
+  gap: 8px;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333333;
+}
+
+/* responsive */
+
+@media (max-width: 568px) {
+  .burger {
+    display: flex;
+  }
+}
